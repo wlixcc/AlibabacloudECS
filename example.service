@@ -1,0 +1,9 @@
+[Unit]
+Description=example api service
+
+[Service]
+ExecStart=/usr/bin/java -Xmx256m -jar /srv/example/example.jar
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target
